@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b78">
+  <meta name="description" content="CALEB CYBER in Nakuru, Kenya. Get assistance with HELB, KRA, TSC, eCitizen, SHA, KUCCPS, graphic design, online applications and document services.">
+  <meta name="keywords" content="CALEB CYBER, cyber services Nakuru, HELB, KRA, eCitizen, TSC, SHA, KUCCPS, graphic design, printing">
+  <meta property="og:title" content="CALEB CYBER | Smart Solutions. Real Results.">
+  <meta property="og:description" content="Trusted digital services and online application assistance in Nakuru, Kenya.">
+  <meta property="og:type" content="website">
+  <title>CALEB CYBER | Smart Solutions. Real Results.</title>
+
+  <style>
+    :root {
+      --navy:#102b78;
+      --blue:#1459d9;
+      --green:#23832c;
+      --lime:#a6d52b;
+      --ink:#17233b;
+      --muted:#65718a;
+      --pale:#f3f7ff;
+      --line:#e4eaf3;
+      --white:#fff;
+      --shadow:0 14px 40px rgba(16,43,120,.09);
+    }
+
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:90px; }
+    body {
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      color:var(--ink);
+      line-height:1.6;
+      background:#fff;
+    }
+    body.menu-open { overflow:hidden; }
+    a { color:inherit; text-decoration:none; }
+    button,input { font:inherit; }
+    img { max-width:100%; }
+    .wrap { width:min(1160px,92%); margin-inline:auto; }
+
+    .skip-link {
+      position:absolute; left:-9999px; top:8px; z-index:100;
+      background:#fff; color:var(--navy); padding:10px 14px; border-radius:8px;
+    }
+    .skip-link:focus { left:8px; }
+
+    header {
+      position:sticky; top:0; z-index:20;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav {
+      min-height:78px; display:flex; align-items:center;
+      justify-content:space-between; gap:18px;
+    }
+    .brand { display:flex; align-items:center; flex-shrink:0; }
+    .brand img {
+      width:245px; max-height:66px; object-fit:contain;
+      object-position:left center; display:block;
+    }
+    .links { display:flex; align-items:center; gap:22px; }
+    .links a {
+      font-size:14px; font-weight:700; color:#40506a;
+      padding:8px 0;
+    }
+    .links a:hover,.links a:focus-visible { color:var(--green); }
+
+    .btn {
+      display:inline-flex; justify-content:center; align-items:center;
+      gap:7px; padding:12px 18px; border:0; border-radius:9px;
+      background:var(--green); color:#fff; font-weight:750;
+      cursor:pointer; transition:transform .2s,filter .2s;
+    }
+    .btn:hover { filter:brightness(.95); transform:translateY(-1px); }
+    .btn:focus-visible,.menu-toggle:focus-visible,a:focus-visible,
+    input:focus-visible { outline:3px solid #a6d52b; outline-offset:3px; }
+    .btn.blue { background:var(--navy); }
+    .btn.light { background:#fff; color:var(--navy); border:1px solid var(--line); }
+    .menu-toggle {
+      display:none; border:1px solid var(--line); background:#fff;
+      color:var(--navy); border-radius:9px; padding:9px 12px;
+      font-size:22px; line-height:1; cursor:pointer;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at 85% 20%,#e6f4dd,transparent 27%),
+        linear-gradient(120deg,#f2f6ff,#fff 70%);
+      padding:76px 0;
+    }
+    .hero-grid {
+      display:grid; grid-template-columns:1.1fr .9fr;
+      gap:44px; align-items:center;
+    }
+    .pill {
+      display:inline-block; background:#e9f4e7; color:#216b28;
+      border-radius:30px; padding:6px 12px; font-size:12px;
+      font-weight:800; letter-spacing:.08em; text-transform:uppercase;
+    }
+    h1 {
+      font-size:clamp(42px,5vw,64px); line-height:1.05;
+      letter-spacing:-.04em; color:var(--navy); margin:18px 0;
+    }
+    h1 em { font-style:normal; color:var(--green); }
+    .hero p { font-size:18px; color:var(--muted); max-width:590px; margin-bottom:26px; }
+    .actions { display:flex; gap:11px; flex-wrap:wrap; }
+    .note { font-size:13px; color:var(--muted); margin-top:15px; }
+
+    .panel {
+      background:#fff; border:1px solid var(--line); border-radius:20px;
+      padding:25px; box-shadow:0 20px 55px rgba(16,43,120,.07);
+    }
+    .panel h2 { margin:0 0 15px; color:var(--navy); font-size:21px; }
+    .quickgrid { display:grid; grid-template-columns:1fr 1fr; gap:11px; }
+    .quick { border:1px solid var(--line); border-radius:12px; padding:14px; }
+    .quick strong { display:block; color:var(--navy); font-size:14px; }
+    .quick small { color:var(--muted); font-size:12px; }
+
+    section { padding:72px 0; }
+    .heading { text-align:center; max-width:680px; margin:0 auto 30px; }
+    .eyebrow {
+      color:var(--green); font-weight:800; letter-spacing:.1em;
+      text-transform:uppercase; font-size:12px;
+    }
+    .heading h2 {
+      font-size:clamp(29px,4vw,39px); line-height:1.2;
+      color:var(--navy); margin:8px 0;
+    }
+    .heading p { color:var(--muted); margin:0; }
+
+    .search-wrap { max-width:620px; margin:0 auto 25px; }
+    .search {
+      display:block; width:100%; padding:14px 15px;
+      border:1px solid #d8e1ee; border-radius:10px;
+      font-size:15px; color:var(--ink); background:#fff;
+    }
+    .search-help { display:block; margin:7px 2px 0; color:var(--muted); font-size:12px; }
+
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:15px; }
+    .card {
+      border:1px solid var(--line); border-radius:15px;
+      padding:20px; background:#fff; transition:.2s;
+    }
+    .card:hover {
+      border-color:#b9cbea; box-shadow:var(--shadow);
+      transform:translateY(-2px);
+    }
+    .card h3 { margin:0 0 10px; color:var(--navy); font-size:17px; }
+    .card ul { padding-left:18px; margin:0; color:#5d6a80; font-size:13px; }
+    .card li { padding:3px 0; }
+    .card .service-link {
+      display:inline-block; color:var(--green); font-weight:800;
+      font-size:12px; margin-top:12px;
+    }
+    .num {
+      display:inline-grid; place-items:center; width:34px; height:34px;
+      background:#edf3ff; color:var(--navy); border-radius:10px;
+      font-weight:900; margin-bottom:10px;
+    }
+    .empty {
+      display:none; text-align:center; color:var(--muted);
+      padding:24px; border:1px dashed #cbd6e5; border-radius:12px;
+    }
+    .empty p { margin:0 0 12px; }
+
+    .about { background:var(--pale); }
+    .aboutgrid {
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:42px; align-items:center;
+    }
+    .about h2 { font-size:clamp(30px,4vw,36px); line-height:1.15; color:var(--navy); margin:8px 0 14px; }
+    .about p { color:var(--muted); }
+    .ticks { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:20px; }
+    .tick {
+      background:#fff; border:1px solid var(--line);
+      border-radius:9px; padding:12px; font-size:13px; font-weight:700;
+    }
+    .tick span { color:var(--green); margin-right:6px; }
+    .logobox {
+      background:#fff; border:1px solid var(--line);
+      border-radius:18px; padding:20px;
+    }
+    .logobox img { width:100%; display:block; object-fit:contain; }
+
+    .contact {
+      background:linear-gradient(120deg,var(--navy),#173c91);
+      color:#fff; border-radius:20px; padding:36px;
+      display:flex; align-items:center; justify-content:space-between; gap:20px;
+    }
+    .contact h2 { font-size:30px; line-height:1.2; margin:0 0 8px; }
+    .contact p { color:#d8e3ff; margin:0; }
+    .contact .btn { background:var(--lime); color:#183b19; white-space:nowrap; }
+    .contact-details { margin-top:12px !important; }
+    .contact-details a { text-decoration:underline; text-underline-offset:3px; }
+
+    footer { border-top:1px solid var(--line); padding:25px 0; color:var(--muted); font-size:13px; }
+    .foot { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+
+    @media (max-width:900px) {
+      .menu-toggle { display:inline-flex; }
+      .nav { min-height:72px; }
+      .links {
+        display:none; position:absolute; top:100%; left:0; right:0;
+        padding:14px 4% 20px; background:#fff;
+        border-bottom:1px solid var(--line); box-shadow:var(--shadow);
+        flex-direction:column; align-items:stretch; gap:4px;
+      }
+      .links.open { display:flex; }
+      .links a { padding:11px 8px; }
+      .hero-grid,.aboutgrid { grid-template-columns:1fr; }
+      .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .hero { padding:55px 0; }
+      .brand img { width:205px; }
+      .contact { align-items:flex-start; flex-direction:column; }
+    }
+    @media (max-width:560px) {
+      .grid { grid-template-columns:1fr; }
+      .nav { min-height:66px; gap:9px; }
+      .brand img { width:155px; }
+      .nav-cta { font-size:11px; padding:10px 11px; }
+      .menu-toggle { padding:8px 10px; }
+      .hero p { font-size:16px; }
+      .contact { padding:26px; }
+      .contact h2 { font-size:26px; }
+      .quickgrid,.ticks { grid-template-columns:1fr 1fr; }
+      section { padding:58px 0; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      html { scroll-behavior:auto; }
+      *,*::before,*::after { transition:none !important; animation:none !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="CALEB CYBER home">
+        <img src="caleb_cyber_logo.png" alt="CALEB CYBER logo">
+      </a>
+
+      <nav class="links" id="site-menu" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Our Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn nav-cta" href="https://wa.me/254797254920?text=Hello%20CALEB%20CYBER%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener noreferrer">WhatsApp Us ↗</a>
+      <button class="menu-toggle" id="menu-toggle" type="button"
+        aria-label="Open navigation menu" aria-controls="site-menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="pill">Nakuru, Kenya</span>
+          <h1>Smart solutions.<br><em>Real results.</em></h1>
+          <p>Your trusted digital service partner. Get convenient assistance with government portals, online applications, document services and creative design — all in one place.</p>
+          <div class="actions">
+            <a class="btn" href="#services">Explore our services ↓</a>
+            <a class="btn blue" href="https://wa.me/254797254920?text=Hello%20CALEB%20CYBER%2C%20I%20need%20assistance." target="_blank" rel="noopener noreferrer">Chat with us</a>
+          </div>
+          <div class="note">Straightforward support for your everyday digital needs.</div>
+        </div>
+
+        <div class="panel">
+          <h2>What can we help with?</h2>
+          <div class="quickgrid">
+            <div class="quick"><strong>HELB services</strong><small>Student loan support</small></div>
+            <div class="quick"><strong>KRA services</strong><small>PIN and tax assistance</small></div>
+            <div class="quick"><strong>TSC services</strong><small>Teacher portal support</small></div>
+            <div class="quick"><strong>eCitizen services</strong><small>Government applications</small></div>
+            <div class="quick"><strong>SHA services</strong><small>Registration and updates</small></div>
+            <div class="quick"><strong>Graphic design</strong><small>Posters and branding</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="heading">
+          <span class="eyebrow">What we do</span>
+          <h2>Services designed around your needs</h2>
+          <p>Browse our service categories. Search for a specific task, then contact us for assistance and requirements.</p>
+        </div>
+
+        <div class="search-wrap">
+          <label class="search-help" for="service-search">Search our services</label>
+          <input class="search" id="service-search" type="search"
+            placeholder="Try HELB, KRA, passport or poster design…" autocomplete="off">
+          <span class="search-help" id="search-count" aria-live="polite">Showing all services.</span>
+        </div>
+
+        <div class="grid" id="service-cards">
+          <article class="card" data-key="helb student loan applications portal registration login password reset recovery status tracking disbursement appeals clearance repayment">
+            <div class="num">01</div><h3>HELB Services</h3>
+            <ul>
+              <li>First-time and subsequent loan applications</li>
+              <li>Portal registration, login and password reset</li>
+              <li>Loan application and disbursement status checks</li>
+              <li>Appeals and clearance certificate assistance</li>
+              <li>Loan repayment guidance</li>
+            </ul>
+            <a class="service-link" data-service="HELB services" href="https://wa.me/254797254920">Enquire about HELB →</a>
+          </article>
+
+          <article class="card" data-key="kra pin registration retrieval recovery tax returns nil employment email account">
+            <div class="num">02</div><h3>KRA Services</h3>
+            <ul>
+              <li>New KRA PIN registration and retrieval</li>
+              <li>Individual, nil and employment returns filing</li>
+              <li>KRA email address updates</li>
+              <li>KRA account assistance</li>
+            </ul>
+            <a class="service-link" data-service="KRA services" href="https://wa.me/254797254920">Enquire about KRA →</a>
+          </article>
+
+          <article class="card" data-key="tsc teacher registration number wealth declaration profile update account status certificate">
+            <div class="num">03</div><h3>TSC Services</h3>
+            <ul>
+              <li>TSC online registration and number application</li>
+              <li>Wealth declaration assistance</li>
+              <li>Profile and account updates</li>
+              <li>Teacher registration status checks</li>
+              <li>Certificate application guidance</li>
+            </ul>
+            <a class="service-link" data-service="TSC services" href="https://wa.me/254797254920">Enquire about TSC →</a>
+          </article>
+
+          <article class="card" data-key="ecitizen passport driving licence good conduct police clearance applications account registration recovery government">
+            <div class="num">04</div><h3>eCitizen Services</h3>
+            <ul>
+              <li>Passport and driving licence applications</li>
+              <li>Certificate of Good Conduct / police clearance</li>
+              <li>eCitizen account registration and recovery</li>
+              <li>Government service applications</li>
+            </ul>
+            <a class="service-link" data-service="eCitizen services" href="https://wa.me/254797254920">Enquire about eCitizen →</a>
+          </article>
+
+          <article class="card" data-key="sha social health authority nhif registration account member dependant contribution status transition claims">
+            <div class="num">05</div><h3>SHA Services</h3>
+            <ul>
+              <li>New SHA registration and account updates</li>
+              <li>Member details and dependant management</li>
+              <li>Contribution assistance and status checks</li>
+              <li>NHIF-to-SHA transition assistance</li>
+              <li>Claims assistance and guidance</li>
+            </ul>
+            <a class="service-link" data-service="SHA services" href="https://wa.me/254797254920">Enquire about SHA →</a>
+          </article>
+
+          <article class="card" data-key="kuccps placement university college applications course revision selection status">
+            <div class="num">06</div><h3>KUCCPS Services</h3>
+            <ul>
+              <li>KUCCPS applications and course revision</li>
+              <li>University and college placement assistance</li>
+              <li>Course selection guidance</li>
+              <li>Placement status checking</li>
+            </ul>
+            <a class="service-link" data-service="KUCCPS services" href="https://wa.me/254797254920">Enquire about KUCCPS →</a>
+          </article>
+
+          <article class="card" data-key="graphic design birthday political campaign posters business advertisements promotional event personalised social media logos brand identity custom">
+            <div class="num">07</div><h3>Graphic Design</h3>
+            <ul>
+              <li>Birthday, event and personalised posters</li>
+              <li>Political campaign and promotional posters</li>
+              <li>Business advertisements and social media designs</li>
+              <li>Business logos and brand identity</li>
+              <li>Custom graphic designs</li>
+            </ul>
+            <a class="service-link" data-service="graphic design" href="https://wa.me/254797254920">Enquire about design →</a>
+          </article>
+
+          <article class="card" data-key="online applications digital assistance forms filling registration portal account creation recovery tracking government">
+            <div class="num">08</div><h3>Online Applications</h3>
+            <ul>
+              <li>Online form filling and registrations</li>
+              <li>Portal account creation and recovery</li>
+              <li>Online application tracking</li>
+              <li>General government portal assistance</li>
+            </ul>
+            <a class="service-link" data-service="online applications" href="https://wa.me/254797254920">Enquire about applications →</a>
+          </article>
+
+          <article class="card" data-key="document preparation formatting pdf editing conversion printing photocopying scanning digital">
+            <div class="num">09</div><h3>Document &amp; Printing</h3>
+            <ul>
+              <li>Document preparation and professional formatting</li>
+              <li>PDF editing and conversion</li>
+              <li>Printing and photocopying</li>
+              <li>Document scanning and digital assistance</li>
+            </ul>
+            <a class="service-link" data-service="document and printing services" href="https://wa.me/254797254920">Enquire about documents →</a>
+          </article>
+        </div>
+
+        <div class="empty" id="empty-results" role="status">
+          <p>No matching service found. Try a different keyword or contact us directly.</p>
+          <a class="btn" href="https://wa.me/254797254920?text=Hello%20CALEB%20CYBER%2C%20I%20would%20like%20to%20ask%20about%20your%20services." target="_blank" rel="noopener noreferrer">Ask us on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap aboutgrid">
+        <div>
+          <span class="eyebrow">About CALEB CYBER</span>
+          <h2>Your trusted digital service partner.</h2>
+          <p>CALEB CYBER provides practical assistance with online services, government portals, document tasks and graphic design. Based in Nakuru, Kenya, we aim to make everyday digital processes simpler and more convenient.</p>
+          <p>Have a question about a service, its requirements or charges? Get in touch before proceeding.</p>
+          <div class="ticks">
+            <div class="tick"><span>✓</span>Digital assistance</div>
+            <div class="tick"><span>✓</span>Document services</div>
+            <div class="tick"><span>✓</span>Creative design</div>
+            <div class="tick"><span>✓</span>Nakuru, Kenya</div>
+          </div>
+        </div>
+        <div class="logobox">
+          <img src="caleb_cyber_logo.png" alt="Official CALEB CYBER logo">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact">
+          <div>
+            <h2>Let's get your task sorted.</h2>
+            <p>Call or WhatsApp CALEB CYBER for enquiries and service assistance.</p>
+            <p class="contact-details"><strong><a href="tel:+254797254920">0797 254 920</a></strong> · Nakuru, Kenya</p>
+          </div>
+          <a class="btn" href="https://wa.me/254797254920?text=Hello%20CALEB%20CYBER%2C%20I%20would%20like%20assistance." target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© <span id="year">2026</span> CALEB CYBER. All rights reserved.</span>
+      <span>Smart Solutions. Real Results. · Nakuru, Kenya</span>
+    </div>
+  </footer>
+
+  <script>
+    "use strict";
+
+    // Mobile navigation
+    const menuToggle = document.getElementById("menu-toggle");
+    const siteMenu = document.getElementById("site-menu");
+
+    function closeMenu() {
+      siteMenu.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
+      menuToggle.textContent = "☰";
+      document.body.classList.remove("menu-open");
+    }
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = siteMenu.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+      menuToggle.textContent = isOpen ? "×" : "☰";
+      document.body.classList.toggle("menu-open", isOpen);
+    });
+
+    siteMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeMenu();
+    });
+
+    // Live service search
+    const searchInput = document.getElementById("service-search");
+    const cards = Array.from(document.querySelectorAll("#service-cards .card"));
+    const emptyResults = document.getElementById("empty-results");
+    const searchCount = document.getElementById("search-count");
+
+    searchInput.addEventListener("input", () => {
+      const query = searchInput.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const searchableText = (card.innerText + " " + (card.dataset.key || "")).toLowerCase();
+        const matches = searchableText.includes(query);
+        card.hidden = !matches;
+        if (matches) visibleCount++;
+      });
+
+      emptyResults.style.display = visibleCount === 0 ? "block" : "none";
+      searchCount.textContent = query
+        ? `Showing ${visibleCount} of ${cards.length} service categories.`
+        : "Showing all services.";
+    });
+
+    // Create a relevant pre-filled WhatsApp message for each service
+    document.querySelectorAll(".service-link").forEach(link => {
+      const service = link.dataset.service || "your services";
+      const message = `Hello CALEB CYBER, I would like to enquire about ${service}. Please share the requirements and charges.`;
+      link.href = `https://wa.me/254797254920?text=${encodeURIComponent(message)}`;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    });
+
+    // Keep the displayed copyright year current
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
